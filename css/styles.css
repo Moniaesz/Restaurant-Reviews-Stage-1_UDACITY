@@ -65,7 +65,7 @@ nav h1 {
 }
 nav h1 a {
   color: #252831;
-  font-size: 14pt;
+  font-size: 18pt;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ nav h1 a {
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
 /*  line-height: 1;*/
   margin: 0 20px;
@@ -130,7 +130,7 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
+  font-size: 14pt;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
@@ -292,9 +292,9 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 
-@media all and (max-width: 444px ) {
+@media all and (max-width: 473px ) {
   nav h1 a {
-  font-size: 11pt;
+  font-size: 15pt;
   }
   .filter-options {
     justify-content: flex-start;
@@ -306,7 +306,7 @@ nav h1 a {
   }
 }
 
-@media all and (min-width: 445px) and (max-width: 578px) {
+@media all and (min-width: 445px) and (max-width: 593px) {
   .filter-options {
     height: 100px;
   }

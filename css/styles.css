@@ -52,14 +52,16 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 nav {
   width: 100%;
   height: 80px;
-  background-color: #252831;
+  background-color: #fff;
   text-align:center;
+  display: flex;
+  align-items: center;
 }
 nav h1 {
   margin: auto;
 }
 nav h1 a {
-  color: #fff;
+  color: #252831;
   font-size: 14pt;
   font-weight: 200;
   letter-spacing: 10px;
@@ -106,15 +108,18 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
-  background-color: #3397DB;
+  height: 70px;
+  background-color: #e1e2e4;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .filter-options h2 {
-  color: white;
+  color: #25283;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1;
+/*  line-height: 1;*/
   margin: 0 20px;
 }
 .filter-options select {
@@ -127,6 +132,7 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+  border-radius: 3px;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -258,7 +264,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -273,3 +279,23 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Media Queries ====================== */
+
+@media all and (max-width: 444px ) {
+  nav h1 a {
+  font-size: 11pt;
+  }
+  .filter-options {
+    justify-content: flex-start;
+    height: 150px;
+  }
+}
+
+@media all and (min-width: 445px) and (max-width: 578px) {
+  .filter-options {
+    height: 100px;
+  }
+}
+
+

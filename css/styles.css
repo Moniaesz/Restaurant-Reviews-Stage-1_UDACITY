@@ -171,9 +171,9 @@ nav h1 a {
   margin-top: 9%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #a05509;
   font-family: Arial,sans-serif;
-  font-size: 14pt;
+  font-size: 17pt;
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -182,14 +182,14 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0;
-  font-size: 11pt;
+  font-size: 14pt;
 }
 #restaurants-list li a {
   background-color: #313133;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
+  font-size: 13pt;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
@@ -208,7 +208,7 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 20%;
-  position: fixed;
+/*  position: fixed;*/
   right: 0;
   top: 80px;
   width: 100%;
@@ -240,8 +240,6 @@ nav h1 a {
 #restaurant-address {
   font-size: 15pt;
 /*  margin: 10px 0px;*/
-display: flex;
-justify-content: center;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -260,6 +258,9 @@ justify-content: center;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 /*  width: 50%;*/
 }
 #reviews-container {
@@ -270,7 +271,9 @@ justify-content: center;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
-  padding-bottom: 1pt;
+/*  padding-bottom: 1pt;*/
+  display: flex;
+  justify-content: center;
 }
 #reviews-list {
   margin: 0;
@@ -293,8 +296,13 @@ justify-content: center;
   font-size: 13pt;
 }
 
+#reviews-list li p:nth-child(1) {
+    font-weight: bold;
+  }
+
 #reviews-list li p:nth-child(3) {
     background-color: #a05509;
+    border-radius: 10px;
     color: white;
     width: 5rem;
     padding: 2%;
@@ -306,18 +314,24 @@ justify-content: center;
 
 #restaurant-hours td {
   color: #666;
+  font-size: 14pt;
+}
+
+#restaurant-hours td:nth-child(1) {
+  color: #a05509;
 }
 
 /* ====================== Media Queries ====================== */
 
 @media all and (max-width: 473px ) {
   nav h1 a {
-  font-size: 15pt;
+    font-size: 15pt;
   }
   .filter-options {
     justify-content: flex-start;
     height: 150px;
   }
+}
 
   #restaurants-list li {
   width: 370px;

@@ -206,13 +206,21 @@ nav h1 a {
   width: 100%;
   z-index: 1000;
 }
+
+.inside #maincontent {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 200px;
+  height: 300px;
 /*  position: fixed;*/
   right: 0;
   top: 80px;
   width: 100%;
+  order: 2
 }
 .inside #map {
   background-color: #ccc;
@@ -237,6 +245,7 @@ nav h1 a {
 #restaurant-img {
 	width: 100%;
   height: auto;
+  overflow: hidden;
 }
 #restaurant-address {
   font-size: 21pt;
@@ -264,8 +273,15 @@ nav h1 a {
   justify-content: center;
 /*  width: 50%;*/
 }
+
+#restaurant-container {
+  border: solid 2px green
+  order: 1;
+}
+
 #reviews-container {
   padding: 30px 40px 80px;
+  order: 3;
 }
 #reviews-container h2 {
   color: #a05509;

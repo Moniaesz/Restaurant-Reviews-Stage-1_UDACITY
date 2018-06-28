@@ -341,12 +341,13 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 
-@media all and (max-width: 473px ) {
+@media all and (max-width: 590px ) {
   nav h1 a {
     font-size: 15pt;
   }
   .filter-options {
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
     height: 150px;
   }
 }
@@ -356,7 +357,7 @@ nav h1 a {
   }*/
 }
 
-@media all and (min-width: 445px) and (max-width: 593px) {
+@media all and (min-width: 445px) and (max-width: 598px) {
   .filter-options {
     height: 100px;
   }

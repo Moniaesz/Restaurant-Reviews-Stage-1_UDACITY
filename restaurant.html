@@ -23,6 +23,7 @@
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
+        <a href="#restaurant-container"" class="skip-link">Skip the map field</a>
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -31,12 +32,12 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+    <section id="restaurant-container" tabindex="-1">
+      <p id="restaurant-name"></p>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>

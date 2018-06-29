@@ -1,3 +1,15 @@
+
+// service-worker registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./js/service-worker.js')
+    .then(function (registration) {
+      console.log('Service Worker registered', registration);
+    }).catch(function(err) {
+      console.log('Registration of service worker failed', err);
+    })
+}
+
 let restaurants,
   neighborhoods,
   cuisines

@@ -27,13 +27,8 @@ self.addEventListener('install', function (e) {
 self.addEventListener('fetch', function (e) {
     e.respondWith(
         caches.match(e.request).then(function (response) {
-            return response || fetch(e.request)
-            .then(function (res) {
-                return caches.open('restaurant-v1')
-                .then(function (cache) {
-                    cache.put(e.request, res.clone());
-                });
-            });
+            if (response) return response;
+            return fetch(e.request);
         })
     );
 });

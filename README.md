@@ -1,6 +1,6 @@
 # Restaurant Reviews: Stage 1
 
-This game is a project made for Nanodegree Program by Udacity&Google in Front-end Path.
+This website is a project made for Nanodegree Program by Udacity&Google in Front-end Path.
 
 The goal was to turn static, unresponsive site to the one that:
 
